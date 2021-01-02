@@ -30,8 +30,9 @@ app.set('trust proxy', 1);
 
 app.get('/', apiLimit, (req, res) => {
   res.json({
-    'sample-pagination': '?page=1',
-    'sample-limit': '?limit=10',
+    base_url: 'https://dummy-review.herokuapp.com/api/v1',
+    sample_pagination: '?page=1',
+    sample_limit: '?limit=10',
     sample: '?page=1&limit=10'
   });
 });
